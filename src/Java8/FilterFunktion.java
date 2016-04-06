@@ -4,5 +4,5 @@ import klassen.Fahrzeug;
 
 public interface FilterFunktion
 {
-	public boolean erstelleFilter(Fahrzeug f);
+	public boolean erfuelltFilterKriterium(Fahrzeug f);
 }

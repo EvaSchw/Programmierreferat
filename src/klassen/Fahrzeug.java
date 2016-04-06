@@ -42,4 +42,10 @@ public class Fahrzeug
 	{
 		this.preis = preis;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return this.getClass().getSimpleName() + ": Hersteller " + this.hersteller + ", Leistung " + this.leistung + ", Preis " + this.preis;
+	}
 }
