@@ -3,14 +3,14 @@ package klassen;
 public class Fahrzeug
 {
 	private String hersteller;
-	private int anzTueren;
 	private int leistung;
+	private int preis;
 	
-	public Fahrzeug(String hersteller, int anzTueren, int leistung)
+	public Fahrzeug(String hersteller, int leistung, int preis)
 	{
 		setHersteller(hersteller);
-		setAnzTueren(anzTueren);
 		setLeistung(leistung);
+		setPreis(preis);
 	}
 
 	public String getHersteller()
@@ -23,16 +23,6 @@ public class Fahrzeug
 		this.hersteller = hersteller;
 	}
 	
-	public int getAnzTueren()
-	{
-		return anzTueren;
-	}
-	
-	public void setAnzTueren(int anzTueren)
-	{
-		this.anzTueren = anzTueren;
-	}
-	
 	public int getLeistung()
 	{
 		return leistung;
@@ -41,5 +31,15 @@ public class Fahrzeug
 	public void setLeistung(int leistung)
 	{
 		this.leistung = leistung;
+	}
+
+	public int getPreis()
+	{
+		return preis;
+	}
+
+	public void setPreis(int preis)
+	{
+		this.preis = preis;
 	}
 }
