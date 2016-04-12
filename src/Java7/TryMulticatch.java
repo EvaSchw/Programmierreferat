@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 import klassen.Fahrzeug;
 
@@ -18,8 +19,9 @@ public class TryMulticatch {
 		
 		try {
 			f.setLeistung(120);
-		} catch ( IndexOutOfBoundsException e) {
+		} catch (IOException | IndexOutOfBoundsException e) {
 			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
 		
 	}
