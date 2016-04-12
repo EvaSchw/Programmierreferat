@@ -46,4 +46,9 @@ public class Filtern
 			i++;
 		}
 	}
+	
+	public static boolean istVonDeutschemHersteller(Fahrzeug f)
+	{
+		return f.getHersteller() == "BMW" || f.getHersteller() == "Audi" || f.getHersteller() == "Mercedes";
+	}
 }

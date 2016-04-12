@@ -43,6 +43,11 @@ public class Fahrzeug
 		this.preis = preis;
 	}
 	
+	public boolean istVonDeutschemHersteller(Fahrzeug f)
+	{
+		return f.getHersteller() == "BMW" || f.getHersteller() == "Audi" || f.getHersteller() == "Mercedes";
+	}
+	
 	@Override
 	public String toString()
 	{

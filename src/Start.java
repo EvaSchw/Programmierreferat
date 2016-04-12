@@ -18,15 +18,27 @@ public class Start
 		fahrzeuge.add(new PKW("Porsche", 150, 15000, 2));
 		fahrzeuge.add(new PKW("BMW", 110, 11000, 5));
 		
+		//1. Variante
 //		Filtern.filterMotorrad(fahrzeuge);
-		Filtern.filterInterface(fahrzeuge, new FilterFunktion()
-		{
-			@Override
-			public boolean erfuelltFilterKriterium(Fahrzeug f)
-			{
-				return (f.getPreis() < 10000);
-			}
-		});
+//		2. Variante
+//		Filtern.filterInterface(fahrzeuge, new FilterFunktion()
+//		{
+//			@Override
+//			public boolean erfuelltFilterKriterium(Fahrzeug f)
+//			{
+//				return (f.getPreis() < 10000);
+//			}
+//		});
+		
+		//Variante Mit Lambda-Expression
+//		Filtern.filterInterface(fahrzeuge, f -> f.getLeistung() >= 100);
+		
+		//Methoden-Referencen-Vergleich
+//		Filtern.filterInterface(fahrzeuge, f -> f.getHersteller() == "BMW" || f.getHersteller() == "Audi"
+//											|| f.getHersteller() == "Mercedes");
+		
+		//Methode verwenden
+		Filtern.filterInterface(fahrzeuge, Filtern::istVonDeutschemHersteller);
 		
 		for(Fahrzeug z: fahrzeuge)
 			System.out.println(z);
