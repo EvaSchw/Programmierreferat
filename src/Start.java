@@ -3,13 +3,15 @@ import java.util.List;
 
 import Java8.FilterFunktion;
 import Java8.Filtern;
+import exception.HerstellerNullException;
+import exceptions.PreisUnterNullException;
 import klassen.Fahrzeug;
 import klassen.Motorrad;
 import klassen.PKW;
 
 public class Start
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws HerstellerNullException, PreisUnterNullException
 	{
 		List<Fahrzeug> fahrzeuge = new ArrayList<Fahrzeug>();
 		fahrzeuge.add(new PKW("BMW", 100, 10000, 3));

@@ -1,9 +1,12 @@
 package klassen;
 
+import exception.HerstellerNullException;
+import exceptions.PreisUnterNullException;
+
 public class Motorrad extends Fahrzeug
 {
 
-	public Motorrad(String hersteller, int leistung, int preis)
+	public Motorrad(String hersteller, int leistung, int preis) throws HerstellerNullException, PreisUnterNullException
 	{
 		super(hersteller, leistung, preis);
 	}

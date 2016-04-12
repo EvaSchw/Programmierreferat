@@ -1,5 +1,8 @@
 package klassen;
 
+import exception.HerstellerNullException;
+import exceptions.PreisUnterNullException;
+
 public class Fahrzeug
 {
 	private String hersteller;
@@ -7,7 +10,7 @@ public class Fahrzeug
 	private int preis;
 	private String farbe;
 	
-	public Fahrzeug(String hersteller, int leistung, int preis)
+	public Fahrzeug(String hersteller, int leistung, int preis) throws HerstellerNullException, PreisUnterNullException
 	{
 		setHersteller(hersteller);
 		setLeistung(leistung);
@@ -19,8 +22,10 @@ public class Fahrzeug
 		return hersteller;
 	}
 	
-	public void setHersteller(String hersteller)
+	public void setHersteller(String hersteller) throws HerstellerNullException
 	{
+		if(hersteller == null)
+			throw new HerstellerNullException("Hersteller darf nicht leer sein!");
 		this.hersteller = hersteller;
 	}
 	
@@ -39,8 +44,10 @@ public class Fahrzeug
 		return preis;
 	}
 
-	public void setPreis(int preis)
+	public void setPreis(int preis) throws PreisUnterNullException
 	{
+		if(preis < 0)
+			throw new PreisUnterNullException("Der Preis darf nicht negativ sein!");
 		this.preis = preis;
 	}
 	
