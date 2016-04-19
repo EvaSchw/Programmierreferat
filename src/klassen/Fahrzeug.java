@@ -8,7 +8,6 @@ public class Fahrzeug
 	private String hersteller;
 	private int leistung;
 	private int preis;
-	private String farbe;
 	
 	public Fahrzeug(String hersteller, int leistung, int preis) throws HerstellerNullException, PreisUnterNullException
 	{
@@ -54,11 +53,6 @@ public class Fahrzeug
 	public boolean istVonDeutschemHersteller(Fahrzeug f)
 	{
 		return f.getHersteller() == "BMW" || f.getHersteller() == "Audi" || f.getHersteller() == "Mercedes";
-	}
-	
-	public void setFarbe(String farbe)
-	{
-		this.farbe = farbe;
 	}
 	
 	@Override

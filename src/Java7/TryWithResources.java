@@ -6,30 +6,25 @@ import java.io.IOException;
 
 import javax.swing.JOptionPane;
 
-public class TryWithResources {
-	
-	public static void main(String[] args) throws IOException {
-		
+public class TryWithResources
+{
+
+	public static void main(String[] args) throws IOException
+	{
 		FileWriter fw = null;
 		try
 		{
-			fw = new FileWriter(new File("Test.txt"), true);
+			fw = new FileWriter(new File("Hallo.txt"), true);
 			fw.append("Hallo Leute");
-		} catch (Exception e1)
+		} catch (Exception e)
 		{
-			e1.printStackTrace();
-			JOptionPane.showMessageDialog(null, e1.getMessage());
-		}
-		finally {
+			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, e.getMessage());
+		} finally
+		{
 			fw.close();
 		}
-		
-		try (FileWriter fw1 = new FileWriter("hello.txt", true)){
-			fw1.append("ente");
-		} catch (Exception e){
-			e.printStackTrace();		
-		}
-		
+
 	}
 
 }
