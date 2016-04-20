@@ -34,21 +34,4 @@ public class Filtern
 //		}
 //	}
 	
-	public static void filterInterface(List<Fahrzeug> fahrzeug, FilterFunktion filter)
-	{
-		for(int i = 0; i < fahrzeug.size();)
-		{
-			if(!filter.erfuelltFilterKriterium(fahrzeug.get(i)))
-			{
-				fahrzeug.remove(i);
-				continue;
-			}
-			i++;
-		}
-	}
-	
-	public static boolean istVonDeutschemHersteller(Fahrzeug f)
-	{
-		return f.getHersteller() == "BMW" || f.getHersteller() == "Audi" || f.getHersteller() == "Mercedes";
-	}
 }
