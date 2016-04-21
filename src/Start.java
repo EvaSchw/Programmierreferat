@@ -1,9 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import Java8.FilterFunktion;
-import Java8.Filtern;
-import exception.HerstellerNullException;
+import exceptions.HerstellerNullException;
 import exceptions.PreisUnterNullException;
 import klassen.Fahrzeug;
 import klassen.Motorrad;
@@ -24,6 +22,7 @@ public class Start
 		
 		for(Fahrzeug z: fahrzeuge)
 			System.out.println(z);
+				
 	}
 
 }

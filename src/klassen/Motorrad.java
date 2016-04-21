@@ -1,6 +1,6 @@
 package klassen;
 
-import exception.HerstellerNullException;
+import exceptions.HerstellerNullException;
 import exceptions.PreisUnterNullException;
 
 public class Motorrad extends Fahrzeug
