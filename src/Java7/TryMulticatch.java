@@ -11,18 +11,13 @@ import exception.HerstellerNullException;
 import exceptions.PreisUnterNullException;
 import klassen.Fahrzeug;
 
-public class TryMulticatch {
-	
-	
-	public static void main(String[] args) {
-		
-		try {
-			Fahrzeug f = new Fahrzeug("BMW", 100, 10000);
-		} catch (PreisUnterNullException | HerstellerNullException e) {
-			JOptionPane.showConfirmDialog(null, e.getMessage());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
+public class TryMulticatch
+{
+
+	public static void main(String[] args)
+	{
+
+		//Fahrzeug f = new Fahrzeug("BMW", 100, 10000);
+
 	}
 }
