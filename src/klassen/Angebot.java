@@ -4,6 +4,6 @@ public class Angebot
 {
 	public Angebot (Fahrzeug f)
 	{
-		//Fachlogik für die Erstellung eines Fahrzeuges
+		//Fachlogik fÃ¼r die Erstellung eines Fahrzeuges
 	}
 }

@@ -1,12 +1,5 @@
 package Java7;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-
 import exceptions.HerstellerNullException;
 import exceptions.PreisUnterNullException;
 import klassen.Fahrzeug;

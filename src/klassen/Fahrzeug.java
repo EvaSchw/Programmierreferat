@@ -52,7 +52,8 @@ public class Fahrzeug
 	
 	public boolean istVonDeutschemHersteller(Fahrzeug f)
 	{
-		return f.getHersteller() == "BMW" || f.getHersteller() == "Audi" || f.getHersteller() == "Mercedes";
+		return f.getHersteller().equals("BMW") || f.getHersteller().equals("Audi") || f.getHersteller().equals("Mercedes")
+				|| f.getHersteller().equals("Porsche");
 	}
 	
 	@Override
