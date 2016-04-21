@@ -7,7 +7,7 @@ import java.io.IOException;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-import exception.HerstellerNullException;
+import exceptions.HerstellerNullException;
 import exceptions.PreisUnterNullException;
 import klassen.Fahrzeug;
 
